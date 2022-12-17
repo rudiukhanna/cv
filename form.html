@@ -12,7 +12,6 @@
 
                         <!-- Заголовок -->
     <h1>Hire me</h1>
-   
     
         <p><strong>Contact information</strong></p>
 
@@ -30,47 +29,59 @@
                 </table>
                 
                       <!-- Форма -->
-            <form action="./form.html" method="get">
 
+            <form action="./form.html" method="get">
                 <fieldset>
                     <legend>Contact form</legend>
-
-                    <label for="my-email">E-mail:</label>
-                    <input
-                     id="my-email" 
-                     required
-                     type="email" 
-                     name="email">
-
-                  <br>
-                    
-                  <label for="description">Description:</label>
-                  <textarea
-                        id="description" 
-                        name="description"
-                        cols="30" 
-                        rows="5">
-                  </textarea>
-                    
-                  <br>
-
-                  <label>
-                    Work type:
-                    <select 
-                    name="work-type">
-                    <option value="full-time">Full-time</option>
-                    <option value="remote">Remote</option>
-                    <option value="one-time-project">One-time project</option>
-                    </select>
-                  </label>
-
-                  <br>
-
-                  <input type="submit" value="Hire me">
- 
-                </fieldset>
             
-            </form>
+            <table>
+            <tbody>
+            
+                <tr>
+                    <td><label for="my-email">E-mail:</label></td>
+                    <td>
+                        <input
+                        id="my-email"
+                        required
+                        type="email"
+                        name="email">
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><label for="description">Description:</label></td>
+                    <td>
+                        <textarea
+                        id="description"
+                        name="description"
+                        cols="19" 
+                        rows="5">
+                        </textarea>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td> <label for="work-type">Work type:</label>
+                    </td>
+                    <td>
+                        <select 
+                        id="work-type"
+                        name="work-type">
+                        <option value="full-time">Full-time</option>
+                        <option value="remote">Remote</option>
+                        <option value="one-time-project">One-time project</option>
+                        </select>
+                    </td>
+                </tr>
+         
+            </tbody>
+            </table>
+            
+             <input type="submit" value="Hire me">
+
+            </fieldset>
+            </form> 
+
             </section>
         </main>
 </body>
