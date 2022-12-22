@@ -19,20 +19,46 @@
 
 .header-title {
     font-style: italic;
+    border-bottom: 2px solid #c7fafa;
+}
+
+.header img {
+    border: 2px solid #c7fafa;
+    padding: 10px;
 }
 
 .header-position {
     font-weight: bold;
+    border-bottom: 2px solid #c7fafa;
 }
 
 /* Work experience */
 
+.work {
+    border-bottom: 2px solid #c7fafa;
+}
+
 .work-table-header {
+    background-color: #c7fafa;
     text-transform: uppercase;
+}
+
+.work-table td {
+    background-color: #e9ebeb;
 }
 
 /* Skills */
 
+.skills {
+    border-bottom: 2px solid #c7fafa;
+}
+
 .skills-list {
      list-style-type: square;
+}
+
+/* Achievements */
+
+.achievements {
+    border-bottom: 2px solid #c7fafa;
 }
