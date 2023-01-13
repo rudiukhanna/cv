@@ -29,8 +29,8 @@
 }
 
 .header-image img {
-    width: 100px;
-    height: 100px;
+    object-fit: cover;
+    object-position: 0 0;
     border: 2px solid #c7fafa;
     padding: 10px;
 }

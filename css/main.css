@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+.cv-page {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.sidebar {
+    background-color: #86A3B4;
+}
+
+.sidebar-info h1 {
+    margin: 60px 85px 35px 40px;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.sidebar-info span {
+    color: #1C2E8C;
+}
+
+.photo {
+    width: 385px;
+    height: 290px;
+    background-image: url('../images/IMG_3386.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    padding: 50px 0 35px 40px;
+}
+
+.sidebar-title {
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-right: 50px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #263036;
+    border-bottom: 6px solid #1E1E1E;
+}
+
+.sidebar-subtitle {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #263036;
+}
+
+.address p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #263036;
+}
+
+.phone-link {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #263036;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #1C2E8C;    
+}
+
+.languages {
+    padding: 0 0 530px 40px;
+}
+
+.language {
+margin-top: 20px;
+margin-bottom: 15px;
+}
+
+.languages p {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #1E1E1E;
+}
+
+/* Main */
+.main-content {
+    background-color: #FFFFFF;
+    padding: 60px 55px 550px;
+}
+
+.title {
+    margin: 0;
+    margin-right: 45px;
+    padding-bottom: 25px;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #1E1E1E;
+    border-bottom: 5px solid #000000;
+}
+
+/* Summary */
+.summary p {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #263036;
+}
+
+/* Skills highlights */
+.skills ul {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    column-count: 2;
+}
+
+/* Work Experience */
+.work p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.work-one {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.work-two {
+    margin-bottom: 15px;
+}
+
+.work-three {
+    margin-bottom: 50px;
+}
+
+/* Education */
+.education>.education-content {
+    margin-top: 30px;
+}
