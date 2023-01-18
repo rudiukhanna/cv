@@ -16,7 +16,6 @@
 }
 
 /* Header */
-
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -59,7 +58,6 @@
 }
 
 /* Skills */
-
 .skills {
     border-bottom: 2px solid #c7fafa;
 }
@@ -69,7 +67,6 @@
 }
 
 /* Achievements */
-
 .achievements {
     border-bottom: 2px solid #c7fafa;
 }
