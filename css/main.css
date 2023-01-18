@@ -2,8 +2,15 @@ body {
     margin: 0;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 .cv-page {
     display: flex;
+    padding: 0 15px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -18,14 +25,23 @@ a {
     background-color: #86A3B4;
 }
 
+.sidebar-info {
+    margin-bottom: 35px;
+}
+
 .sidebar-info h1 {
-    margin: 60px 85px 35px 40px;
+    margin: 60px 85px 10px 40px;
     font-size: 40px;
     line-height: 1.2;
     color: #FFFFFF;
 }
 
 .sidebar-info span {
+    color: #1C2E8C;
+}
+
+.form-link {
+    margin-left: 40px;
     color: #1C2E8C;
 }
 
@@ -151,3 +167,242 @@ margin-bottom: 15px;
 .education>.education-content {
     margin-top: 30px;
 }
+
+/* Form-section */
+.form-section {
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0,  0.5);
+    padding-bottom: 20px;
+}
+
+.link-form {
+    color: #0048D9;
+}
+
+input, 
+select, 
+textarea {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-section-title {
+    margin: 0;
+    color:  #0048D9;
+}
+
+.form-section-subtitle {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #0048D9;
+}
+
+.table-contact {
+    border: 0.5px solid #0048D9;
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+.table-contact th, td {
+    border: 1px solid #0048D9;
+    padding: 10px;
+}
+
+.table-contact th {
+    color: #0048D9;
+}
+
+.table-contact td {
+    color: #6F7482;
+}
+
+.form {
+    margin-top: 25px;
+    appearance: none;
+}
+
+.form fieldset {
+   border: solid 1px #0048D9;;
+   border-radius: 40px 10px;
+}
+
+.form-legend {
+    font-weight: 600;
+    color: #0048D9;
+}
+
+.form-email {
+   display: flex;
+   gap: 25px;
+   align-items: center;
+}
+
+.form-description {
+    margin-top: 20px;
+}
+
+.form-work-type {
+    display: flex;
+    margin-top: 20px;
+    gap: 11px;
+    align-items: center;
+}
+
+label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #6F7482;
+}
+
+ .label-email{
+    margin-left: 20px;
+ }
+
+.field::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #B8BCCA;
+}
+
+.label-required {
+    margin-left: 2px;
+    color:#ED0131;
+}
+
+input[type="email"], 
+select,
+textarea {
+    margin-top: 7px;
+    min-width: 460px;
+    background: #F8FAFC;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border: 1px solid #ED0131;
+    border-radius: 4px;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+    border: 1px solid #0E6245;
+}
+
+.label-wrapper p {
+    display: none;
+    margin: 0;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.error {
+    color: #ED0131;
+}
+
+.success {
+    color:#0E6245;
+}
+
+.label-email:invalid +.error {
+    display: block;
+}
+
+.label-email:valid ~.success {
+    display: block;
+}
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 1px solid #0048D9;
+    border-radius: 4px;
+}
+
+.label-description {
+    vertical-align: top;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+textarea {
+   min-height: 139px;
+}
+
+select {
+    background: url('../images/arrow.svg') no-repeat center right 10px;
+    background-color: #F8FAFC;
+}
+
+option {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #3B4256;
+}
+
+input[type="submit"] {
+    margin-top: 40px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: #0048D9;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 4px 16px;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: #002266;
+    border-radius: 6px;
+    padding: 0;
+}
+
+/* Action page */
+.action-page {
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0,  0.5);
+}
+
+    .action-page-title {
+    margin-top: 150px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:  #0048D9;
+}
+
+
+
