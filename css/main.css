@@ -329,7 +329,7 @@ select:valid {
     display: block;
 }
 
-.label-email:valid +.success {
+.label-email:valid ~.success {
     display: block;
 }
 
@@ -383,7 +383,6 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
     background: #002266;
     border-radius: 6px;
-    width: 80px;
     padding: 0;
 }
 
