@@ -5,65 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hire me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <main>
         <section>
+            <div class="form-section">
 
                         <!-- Заголовок -->
-    <h1>Hire me</h1>
+    <h1 class="form-section-title">Hire  
+        <a href="./cv.html" 
+           target="_blank"       
+           class="link-form">
+          me</a>
+    </h1>
     
-        <p><strong>Contact information</strong></p>
+        <h2 class="form-section-subtitle">Contact information</h2>
 
                         <!-- Таблиця -->
-                <table border="1" cellspacing="0" cellpadding="10px">
+                <table class="table-contact">
                     <tr>
-                        <td><strong>Phone</strong></td>
+                        <th>Phone</th>
                         <td>+380984691749</td>
                     </tr>
 
                     <tr>
-                        <td><strong>Address</strong></td>
+                        <th>Address</th>
                         <td>Irpin, Kyiv region, Ukraine</td>
                     </tr>
                 </table>
                 
                       <!-- Форма -->
 
-            <form action="./form.html" method="get">
-                <fieldset>
-                    <legend>Contact form</legend>
+            <form 
+                  action="./actionpage.html"
+                  target="_blank"
+                  method="get" 
+                  class="form"
+                  autocomplete="off">
+                <fieldset> 
+                    <legend class="form-legend">Contact form</legend>
             
-            <table>
-            <tbody>
-            
-                <tr>
-                    <td><label for="my-email">E-mail:</label></td>
-                    <td>
-                        <input
-                        id="my-email"
-                        required
-                        type="email"
-                        name="email">
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td><label for="description">Description:</label></td>
-                    <td>
+           
+                
+                    <div class="label-wrapper">
+                        <label 
+                               for="my-email">E-mail
+                               <span class="label-required">*
+                                </span>:
+                        </label>
+                             <input
+                                id="my-email"
+                                required
+                                type="email"
+                                name="email"
+                                placeholder="Enter e-mail"
+                                class="label-email field">
+                            
+                                <p class="error">Error message</p>
+                                <p class="success">Success message</p>
+                    </div>       
+                    
+
+                   <div class="form-description">
+                        <label 
+                              for="description"
+                              class="label-description">Description:
+                        </label>
+                   
                         <textarea
+                        class="field"
                         id="description"
                         name="description"
-                        cols="19" 
-                        rows="5">
-                        </textarea>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td> <label for="work-type">Work type:</label>
-                    </td>
-                    <td>
+                        placeholder="Please, leave your feedback here..."></textarea>
+                    </div>
+                
+                    <div class="form-work-type">
+                        <label 
+                              for="work-type">Work type:
+                        </label>
+                   
                         <select 
                         id="work-type"
                         name="work-type">
@@ -71,17 +95,16 @@
                         <option value="remote">Remote</option>
                         <option value="one-time-project">One-time project</option>
                         </select>
-                    </td>
-                </tr>
-         
-            </tbody>
-            </table>
+                
+                    </div>
             
              <input type="submit" value="Hire me">
 
             </fieldset>
             </form> 
 
+              
+                </div>
             </section>
         </main>
 </body>
