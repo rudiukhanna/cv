@@ -22,7 +22,12 @@ a {
 
 /* Header */
 .sidebar {
+    width: 385px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     background-color: #86A3B4;
+    padding-top: 20px;
 }
 
 .sidebar-info {
@@ -48,7 +53,7 @@ a {
 .photo {
     width: 385px;
     height: 290px;
-    background-image: url('../images/IMG_3386.jpg');
+    background-image: url('../images/photo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -111,6 +116,7 @@ margin-bottom: 15px;
 
 /* Main */
 .main-content {
+    margin-left: 385px;
     background-color: #FFFFFF;
     padding: 60px 55px 550px;
 }
@@ -170,9 +176,11 @@ margin-bottom: 15px;
 
 /* Form-section */
 .form-section {
-    max-width: 1024px;
-    padding: 0 15px;
-    margin: auto;
+    position: fixed;
+    width: 1024px;
+    top: calc(50% - 330px);
+    left: calc(50% - 512px);
+    padding: 15px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: normal;
     background: #ffffff;
@@ -388,7 +396,9 @@ input[type="submit"]:focus {
 
 /* Action page */
 .action-page {
-    margin: auto;
+    position: fixed;
+    top: calc(50% - 200px);
+    left: calc(50% - 125px);
     height: 350px;
     width: 350px;
     background: #FFFFFF;
@@ -397,7 +407,6 @@ input[type="submit"]:focus {
 }
 
     .action-page-title {
-    margin-top: 150px;
     padding-top: 150px;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
