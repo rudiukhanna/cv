@@ -29,6 +29,13 @@
     --sidebar-subtitle-margin: 35px 0 10px;
     --title-padding-bottom: 15px;
     --title-border-bottom: 5px;
+
+    /* media queries */
+    --margin: auto;
+    --padding: o;
+    --media-title-padding-bottom: 65px;
+    --media-main-padding: 30px 30px 0;
+    --media-title-margin-right: 0;
 }
 
 body {
@@ -63,9 +70,6 @@ a {
 /* Header */
 .sidebar {
     width: var(--main-width);
-    position: fixed;
-    z-index: 1;
-    top: 0;
     background-color: var(--color-background-sidebar);
 }
 
@@ -131,7 +135,6 @@ a {
 
 /* Main */
 .main-content {
-    margin-left: var(--main-width);
     background-color: var(--color-main-background);
     padding: var(--main-content-padding);
     font-weight: var(--font-weight-normal);
@@ -178,6 +181,28 @@ a {
 .education-content {
     color: var(--color-text-primary);
 }
+
+@media screen and (max-width: 385px) {
+    .cv-page {
+        flex-direction: column;
+        margin: var(--margin);
+        padding: var(--padding);
+    }
+
+    .sidebar {
+        padding-bottom: var(--media-title-padding-bottom);
+    }
+
+    .main-content {
+        padding: var(--media-main-padding);
+    }
+
+    .title {
+        margin-right: var(--media-title-margin-right);
+    }
+}
+
+
 
 /* Form-section */
 .form-section {
