@@ -182,6 +182,7 @@ a {
     color: var(--color-text-primary);
 }
 
+/* media queries */
 @media screen and (max-width: 385px) {
     .cv-page {
         flex-direction: column;
