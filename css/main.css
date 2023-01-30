@@ -28,6 +28,8 @@ a {
     top: 0;
     background-color: #86A3B4;
     padding-top: 20px;
+    box-shadow: 2px 2px 5px 5px #c6c7c6;
+    border: 1px solid #1E1E1E;
 }
 
 .sidebar-info {
@@ -57,6 +59,14 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.photo:hover {
+    cursor: pointer;
+    transform: scale(2.5);
+    transform-origin: left;
+    transition: all ease 1s;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .contact {
@@ -167,6 +177,17 @@ margin-bottom: 15px;
 
 .work-three {
     margin-bottom: 50px;
+}
+
+.job {
+    opacity: .7;
+}
+
+
+.work-two:hover,
+.work-three:hover {
+    cursor: pointer;
+    opacity: 1;
 }
 
 /* Education */
