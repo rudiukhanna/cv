@@ -1,6 +1,6 @@
 :root {
-<<<<<<< HEAD
-=======
+
+
 /* colors */
 --color-background-sidebar: #86A3B4;
 --color-main-background: #FFFFFF;
@@ -9,7 +9,6 @@
 --color-text-work-experience: #000000;
 --color-accent:  #1C2E8C;
 --color-languages-text: #1E1E1E;
->>>>>>> Lesson16
 
     /* fonts */
     --font-family-base: 'Inter', sans-serif;
@@ -36,11 +35,10 @@
     --sidebar-container-padding: 0 40px;
     --sidebar-photo-margin: 35px 0;
     --sidebar-title-margin-top: 35px;
-<<<<<<< HEAD
+
     --main-content-padding: 60px 55px 50px;
-=======
     --main-content-padding: 60px 55px 150px;
->>>>>>> Lesson16
+
     --sidebar-subtitle-margin: 35px 0 10px;
     --title-padding-bottom: 15px;
     --title-border-bottom: 5px;
@@ -86,11 +84,9 @@ a {
 .sidebar {
     width: var(--main-width);
     background-color: var(--color-background-sidebar);
-<<<<<<< HEAD
-=======
     box-shadow: 2px 2px 5px 5px #c6c7c6;
     border: 1px solid #1E1E1E;
->>>>>>> Lesson16
+
 }
 
 .sidebar-info h1 {
@@ -131,7 +127,6 @@ a {
     }
 }
 
->>>>>>> Lesson16
 .sidebar-title {
     margin: var(--margin-clear);
     margin-top: var(--sidebar-title-margin-top);
@@ -189,8 +184,6 @@ a {
 
 .work-definition {
     font-weight: var(--font-weight-bold);
-<<<<<<< HEAD
-=======
 }
 
 .job {
@@ -200,7 +193,6 @@ a {
 .work-content:nth-last-child(-n+2):hover {
     cursor: pointer;
     opacity: 1;
->>>>>>> Lesson16
 }
 
 /* Summary */
@@ -230,40 +222,7 @@ a {
     color: var(--color-text-primary);
 }
 
-<<<<<<< HEAD
-/* media queries */
 
-@media screen and (max-width: 576px) {
-    .cv-page {
-        flex-direction: column;
-        margin: var(--margin);
-=======
-@media screen and (max-width: 385px) {
-    .cv-page {
-        flex-direction: column;
-        margin: var(--margin);
-        padding: var(--padding);
->>>>>>> Lesson16
-    }
-
-    .sidebar {
-        padding-bottom: var(--media-title-padding-bottom);
-    }
-
-    .main-content {
-        padding: var(--media-main-padding);
-    }
-
-    .title {
-        margin-right: var(--media-title-margin-right);
-    }
-}
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> Lesson16
 /* Form-section */
 .form-section {
    position: absolute;
