@@ -1,4 +1,12 @@
 :root {
+/* colors */
+--color-background-sidebar: #86A3B4;
+--color-main-background: #FFFFFF;
+--color-text-primary: #263036;
+--color-text-headings: #1E1E1E;
+--color-text-work-experience: #000000;
+--color-accent:  #1C2E8C;
+--color-languages-text: #1E1E1E;
 
     /* fonts */
     --font-family-base: 'Inter', sans-serif;
@@ -25,7 +33,7 @@
     --sidebar-container-padding: 0 40px;
     --sidebar-photo-margin: 35px 0;
     --sidebar-title-margin-top: 35px;
-    --main-content-padding: 60px 55px 550px;
+    --main-content-padding: 60px 55px 150px;
     --sidebar-subtitle-margin: 35px 0 10px;
     --title-padding-bottom: 15px;
     --title-border-bottom: 5px;
@@ -100,10 +108,16 @@ a {
 
 .sidebar-photo:hover {
     cursor: pointer;
-    transform: scale(2);
+    transform: scale(2) translateY(30px);
     transform-origin: left;
     transition: all ease 1s;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar-photo:hover {
+        display: none;
+    }
 }
 
 .sidebar-title {
@@ -169,7 +183,7 @@ a {
     opacity: .7;
 }
 
-.work-content:hover {
+.work-content:nth-last-child(-n+2):hover {
     cursor: pointer;
     opacity: 1;
 }
