@@ -184,24 +184,6 @@ a {
 
 /* media queries */
 
-@media screen and (max-width: 576px) {
-    .cv-page {
-        flex-direction: column;
-        margin: var(--margin);
-    }
-
-    .sidebar {
-        padding-bottom: var(--media-title-padding-bottom);
-    }
-
-    .main-content {
-        padding: var(--media-main-padding);
-    }
-
-    .title {
-        margin-right: var(--media-title-margin-right);
-    }
-}
 
 
 /* Form-section */
