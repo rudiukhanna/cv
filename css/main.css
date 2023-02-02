@@ -25,7 +25,7 @@
     --sidebar-container-padding: 0 40px;
     --sidebar-photo-margin: 35px 0;
     --sidebar-title-margin-top: 35px;
-    --main-content-padding: 60px 55px 550px;
+    --main-content-padding: 60px 55px 50px;
     --sidebar-subtitle-margin: 35px 0 10px;
     --title-padding-bottom: 15px;
     --title-border-bottom: 5px;
@@ -183,11 +183,11 @@ a {
 }
 
 /* media queries */
-@media screen and (max-width: 385px) {
+
+@media screen and (max-width: 576px) {
     .cv-page {
         flex-direction: column;
         margin: var(--margin);
-        padding: var(--padding);
     }
 
     .sidebar {
@@ -202,7 +202,6 @@ a {
         margin-right: var(--media-title-margin-right);
     }
 }
-
 
 
 /* Form-section */
