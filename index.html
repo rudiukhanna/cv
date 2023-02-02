@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/theme.css">
 </head>
 <body>
     <div class="cv-page">
@@ -16,14 +17,18 @@
         <!-- Header -->
         <header class="sidebar">
           
-            <div class="sidebar-info">
-                <h1>Hanna<br><span>Rudiuk</span></h1>
+            <div class="sidebar-container">
+             <div class="sidebar-info">
+                <h1>Hanna<br><span class="sidebar-name">Rudiuk</span></h1>
                 <a  href="./hire-me.html" target="_blank" class="form-link">Hire me</a>
+                </div>
             </div>
-            <div class="photo"></div>
+            <div class="sidebar-photo"> </div>
                 
-            
             <!-- Contact -->
+
+            <div class="sidebar-container">
+
             <div class="contact">
                 <h2 class="sidebar-title">Contact</h2>
                    
@@ -58,6 +63,7 @@
                 <p>English - B2</p>
             </div>
 
+          </div>
         </header>
 
         <!-- Main -->
@@ -66,16 +72,22 @@
 
                 <!-- Summary -->
                 <div class="summary">
-                    <h2 class="title">Summary</h2>
-                    <p>I have 4 years experience of working in customer service and over   3 years of background as flight attendant. That's why I am definitely a team player.
+    
+                  <h2 class="title">Summary</h2>
+
+                  <div class="container">
+                    <p class="summary-about">I have 4 years experience of working in customer service and over   3 years of background as flight attendant. That's why I am definitely a team player.
                      I do love studying, and because of that I'm always opened to learning new technologies, improving my English and soft skills.
                     I believe that not only brain should be toned, but body as well. That's why I lead healthy lifestyle, do workout. <br>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat modi odit laborum fuga sequi natus odio quis vel totam dolorum, suscipit, magnam illum, mollitia fugiat rem ex consequuntur nemo placeat deleniti amet. Veritatis nemo officiis maxime qui, dolor quos reprehenderit accusantium magnam recusandae amet possimus iusto dolore consectetur, animi totam quaerat dolorum reiciendis? Totam vitae eum veniam aliquam tempore cupiditate aliquid excepturi eaque aut fugit! Aliquam vitae at omnis animi saepe dolor minima, ratione dolore libero maxime, veritatis doloribus magni quam dolorum soluta officiis totam quaerat deserunt quia ducimus sapiente voluptates rerum, voluptatum beatae. Autem dolore possimus fugit, velit temporibus atque magni labore asperiores officiis sint magnam laboriosam sit reprehenderit. Consequatur nulla cum veniam unde cumque consequuntur fugiat totam, veritatis beatae officiis delectus optio hic. Accusamus dignissimos, ducimus nemo, quas asperiores aliquid soluta illo repellendus quis dolores placeat officiis quibusdam repellat ea vitae ratione! Mollitia culpa temporibus explicabo eaque voluptatum.</p>
+                    </div>
                 </div>
 
                 <!-- Skills Highlights -->
                 <div class="skills">
+                    
                     <h2 class="title">Skills highlights</h2>
+                    <div class="container">
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -87,46 +99,55 @@
                         <li>Agile</li>
                     </ul>
                 </div>
+            </div>
 
                 <!-- Work Experience -->
                 <div class="work">
+
                     <h2 class="title">Work experience</h2>
                     
                     <!-- Company 1 -->
-                    <div class="work-one">
-                        <p><b>Name of employer:</b> Ukraine International Airlines</p>
-                        <p><b>Dates of employment:</b> 04/2016 - present</p>
-                        <p><b>Job title:</b> Senior Cabin Crew</p>
-                        <p><b>Project/Role description:</b> Provide safety and comfort of guests on board, ensure that all crew members are providing the highest standard of safety and service on board, responsible for the procurement and management of air food and cabin supplies.</p>
+                    <div class="container">
+                    <div class="work-content">
+                        <p><span class="work-definition" >Name of employer:</span> Ukraine International Airlines<br>
+                        <span class="work-definition" >Dates of employment:</span> 04/2016 - present<br>
+                        <span class="work-definition" >Job title:</span> Senior Cabin Crew<br>
+                        <span class="work-definition" >Project/Role description:</span> Provide safety and comfort of guests on board, ensure that all crew members are providing the highest standard of safety and service on board, responsible for the procurement and management of air food and cabin supplies.</p>
                     </div>
 
                     <!-- Company 2 -->
-                    <div class="work-two job">
-                        <p><b>Name of employer:</b> American Medical Centers</p>
-                        <p><b>Dates of employment:</b> 10/2014 - 03/2016</p>
-                        <p><b>Job title:</b> Patient service department manager</p>
-                        <p><b>Project/Role description:</b> Provide customers the information of the medical services cost, billing service, scheduling appointments.</p>
+                    <div class="work-content job">
+                        <p><span class="work-definition" >Name of employer:</span> American Medical Centers<br>
+                        <span class="work-definition" >Dates of employment:</span> 10/2014 - 03/2016<br>
+                        <span class="work-definition" >Job title:</span> Patient service department manager<br>
+                        <span class="work-definition" >Project/Role description:</span> Provide customers the information of the medical services cost, billing service, scheduling appointments.</p>
                     </div>
 
                     <!-- Company 3 -->
-                    <div class="work-three job">
-                        <p><b>Name of employer:</b> Hotel Lybid Kyiv</p>
-                        <p><b>Dates of employment:</b> 10/2012 - 10/2014</p>
-                        <p><b>Job title:</b> Reservation manager</p>
-                        <p><b>Project/Role description:</b> Providing travel information, availabilities of hotel accomodations and prices, handling customer complaints or concerns, making reservations and sending out confirmation notices.</p>
+                    <div class="work-content job">
+                        <p><span class="work-definition" >Name of employer:</span> Hotel Lybid Kyiv<br>
+                        <span class="work-definition" >Dates of employment:</span> 10/2012 - 10/2014<br>
+                        <span class="work-definition" >Job title:</span> Reservation manager<br>
+                        <span class="work-definition" >Project/Role description:</span> Providing travel information, availabilities of hotel accomodations and prices, handling customer complaints or concerns, making reservations and sending out confirmation notices.</p>
                     </div>
+                </div>
+            </div>
 
                 <!-- Education -->
                 <div class="education">
                     <h2 class="title">Education</h2>
-                    <p class="education-content"><b>Dates of studying:</b> from 2008 - to 2014</p>
-                    <p><b>Name of institution:</b> Taras Shevchenko Kyiv National University</p>
-                    <p><b>Degree and major:</b> Master's degree, History</p>
+
+                    <div class="container">
+                    <p class="education-content"><span class="work-definition" >Dates of studying:</span> from 2008 - to 2014<br>
+                    <span class="work-definition" >Name of institution:</span> Taras Shevchenko Kyiv National University<br>
+                    <span class="work-definition" >Degree and major:</span> Master's degree, History</p>
+                  </div>
                 </div>
 
-                </div>
+                
             </div>
-        </main>
+        
+    </main>
 
     </div>
 </body>
