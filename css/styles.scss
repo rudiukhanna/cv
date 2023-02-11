@@ -39,8 +39,9 @@ $photoEnlarge: 2s ease-in both;
 
 
 //   Import color theme
-@import 'main-theme';
-@import 'my-theme';
+@import "main-theme.scss";
+@import "my-theme.scss";
+
 
 
 //  Common styles
