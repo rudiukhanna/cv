@@ -8,33 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans not-italic font-normal tracking-normal  text-base bg-white">
     <main>
         <section>
-            <div class="form-section">
+            <div class="m-25 max-w-5xl mt-44 mb-72 mx-auto shadow-lg px-2.5 py-3">
 
                         <!-- Заголовок -->
-    <h1 class="form-section-title">Hire  
+    <h1 class="m-0 mb-3.5 text-2xl font-semibold text-blue-800">Hire  
         <a href="./index.html" 
            target="_blank"       
            class="link-form">
           me</a>
     </h1>
     
-        <h2 class="form-section-subtitle">Contact information</h2>
+        <h2 class="m-0 mb-1.5 text-lg ">Contact information</h2>
 
                         <!-- Таблиця -->
-                <table class="table-contact">
+                <table class="mb-3.5">
                     <tr>
-                        <th>Phone</th>
+                        <th class="pr-2 text-blue-800">Phone</th>
                         <td>+380984691749</td>
                     </tr>
 
                     <tr>
-                        <th>Address</th>
-                        <td>Irpin, Kyiv region, Ukraine</td>
+                        <th class="text-blue-800">Address</th>
+                        <td class="pl-2.5">Irpin, Kyiv region, Ukraine</td>
                     </tr>
                 </table>
                 
@@ -46,43 +46,34 @@
                   method="get" 
                   class="form"
                   autocomplete="off">
-                <fieldset> 
-                    <legend class="form-legend">Contact form</legend>
+                <fieldset class="rounded-tr-lg border-blue-800 border-solid border-2">  
+                    <legend class="text-lg text-blue-800 font-semibold">Contact form</legend>
             
-           
-                
-                    <div class="label-wrapper">
-                        <label 
-                               for="my-email">E-mail
-                               <span class="label-required">*
-                                </span>:
-                        </label>
-                             <input
-                                id="my-email"
-                                required
-                                type="email"
-                                name="email"
-                                placeholder="Enter e-mail"
-                                class="label-email field">
+                    <!-- E-mail input -->
+                        <div class="md:flex md:items-center pl-2.5 md:space-x-8  mt-3.5 mb-3.5">
                             
-                                <p class="error">Error message</p>
-                                <p class="success">Success message</p>
-                    </div>       
-                    
+                              <label class="text-slate-400" for="inline-full-name">
+                                E-mail address<span class="text-red-700">*</span>:
+                              </label>
+                            
+                            <div class="w-96">
+                              <input class="bg-white appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-800" id="inline-full-name"                  type="email"                           value="Enter e-mail address..."
+                              required>
+                            </div>
+                          </div>
 
-                   <div class="form-description">
-                        <label 
-                              for="description"
-                              class="label-description">Description:
-                        </label>
-                   
-                        <textarea
-                        class="field"
-                        id="description"
-                        name="description"
-                        placeholder="Please, leave your feedback here..."></textarea>
-                    </div>
-                
+                                <!-- Textarea input -->
+                          <div class="md:flex md:items-center pl-2.5 md:space-x-8  mt-3.5 mb-3.5">
+                            <label for="" 
+                                    class="form-label">
+                                    Example textarea
+                            </label>
+                            <textarea class="form-control" 
+                                      id="" 
+                                      rows="3">
+                            </textarea>
+                          </div>
+
                     <div class="form-work-type">
                         <label 
                               for="work-type">Work type:
