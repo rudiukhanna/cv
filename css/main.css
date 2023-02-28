@@ -86,7 +86,7 @@ a {
     background-color: var(--color-background-sidebar);
     box-shadow: 2px 2px 5px 5px #c6c7c6;
     border: 1px solid #1E1E1E;
-    animation: sidebarUp 2s ease-out;
+    animation: sidebarUp 1s ease-out;
 }
 
 @keyframes sidebarUp {
@@ -125,7 +125,7 @@ a {
 .sidebar-photo:hover {
     cursor: pointer;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    animation: photoEnlarge 2s ease-in both;
+    animation: photoEnlarge 1s ease-in both;
 }
 
 @keyframes photoEnlarge {
@@ -186,7 +186,7 @@ a {
     background-color: var(--color-main-background);
     padding: var(--main-content-padding);
     font-weight: var(--font-weight-normal);
-    animation: mainUp 2.5s ease-out;
+    animation: mainUp 1.5s ease-out;
 }
 
 @keyframes mainUp {
@@ -221,7 +221,7 @@ a {
 .work-content:nth-last-child(-n+2):hover {
     cursor: pointer;
     opacity: 1;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 /* Summary */
