@@ -30,7 +30,6 @@ $xLarge: 36px;
 $x2Large: 40px;
 
 // Animation
-$delay: 1s;
 $fill: ease-out;
 
 // colors
@@ -77,10 +76,9 @@ body {
  }
 
 //  Header
-@mixin sidebarUp ($delay, $fill) {
+@mixin sidebarUp($fill) {
     animation-name: sidebarUp;
-    animation-duration: 2s;
-    animation-delay: $delay;
+    animation-duration: 1s;
     animation-fill-mode: $fill;
 }
 
@@ -88,7 +86,7 @@ body {
     background-color: var(--color-background-sidebar);
     box-shadow: 2px 2px 5px 5px $colorBoxShadow;
     border: 1px solid var(--color-text-headings);
-    @include sidebarUp($delay, $fill);
+    @include sidebarUp($fill);
 }
 
 @keyframes sidebarUp {
@@ -118,13 +116,6 @@ body {
     @extend .sidebar-name;
 }
 
-@mixin photoEnlarge ($delay, $fill) {
-    animation-name: $photoEnlarge;
-    animation-duration: 2s;
-    animation-delay: $delay;
-    animation-fill-mode: $fill;
-}
-
 .sidebar-photo {
     margin: $sidebarPhotoMargin;
     width: 100%;
@@ -138,7 +129,7 @@ body {
     &:hover {
         cursor: $cursor;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        @include photoEnlarge($delay, $fill);
+        @include photoEnlarge($fill);
         }
     }
 
@@ -203,7 +194,7 @@ body {
         // Main
         @mixin mainUp ($delay, $fill) {
             animation-name: mainUp;
-            animation-duration: 2.5s;
+            animation-duration: 1.5s;
             animation-delay: $delay;
             animation-fill-mode: $fill;
         }
@@ -245,7 +236,7 @@ body {
             &:hover {
                 cursor: pointer;
                 opacity: 1;
-                transition: all .5s ease-in;   
+                transition: all .1s ease-in;   
             }
         }
 
