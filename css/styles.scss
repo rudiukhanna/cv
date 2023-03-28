@@ -125,10 +125,11 @@ body {
         repeat: no-repeat;
         size: cover;
         position: center;
-        
     }
 }
-   
+ 
+
+// класи для анімації фото
 
 .photo-enlarge {
     cursor: pointer;
@@ -221,6 +222,14 @@ body {
             border-bottom: $titleBorderBottom
                    solid var(--color-text-work-experience);
         }
+    
+        .title-letter {
+            display: inline-block;
+            margin-right: 8px; 
+            padding: 3px 8px; 
+            border: 1px solid black;
+          }
+          
 
         .work-definition {
             font-weight: $fontWeightBold;
