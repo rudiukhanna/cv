@@ -120,6 +120,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: all ease 1s;
 }
 
 .sidebar-photo:hover {
@@ -127,7 +128,6 @@ a {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transform: scale(2) translateY(30px);
     transform-origin: left;
-    transition: all ease 1s;
 }
 
 
