@@ -126,28 +126,28 @@ body {
         size: cover;
         position: center;
     }
-    &:hover {
-        cursor: $cursor;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        @include photoEnlarge($fill);
-        }
+    // &:hover {
+    //     cursor: $cursor;
+    //     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    //     @include photoEnlarge($fill);
+    //     }
     }
 
-        @keyframes photoEnlarge {
-            from {
-                transform: scale(1);
-            }
-                to {
-                transform: scale(2) translateY(30px);
-                transform-origin: left;
-                }
-        }
+        // @keyframes photoEnlarge {
+        //     from {
+        //         transform: scale(1);
+        //     }
+        //         to {
+        //         transform: scale(2) translateY(30px);
+        //         transform-origin: left;
+        //         }
+        // }
 
-        @media screen and (max-width: 768px) {
-            .sidebar-photo:hover {
-                display: none;
-            }
-        }
+        // @media screen and (max-width: 768px) {
+        //     .sidebar-photo:hover {
+        //         display: none;
+        //     }
+        // }
 
         .sidebar-title {
             margin: $marginClear;

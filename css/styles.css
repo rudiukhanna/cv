@@ -80,13 +80,13 @@ a {
   background-size: cover;
   background-position: center;
 }
-.sidebar-photo:hover {
+/* .sidebar-photo:hover {
   cursor: pointer;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  animation: photoEnlarge 2s ease-in both;
-}
+  animation: photoEnlarge .8s ease-in both; */
 
-@keyframes photoEnlarge {
+
+/* @keyframes photoEnlarge {
   from {
     transform: scale(1);
   }
@@ -94,7 +94,7 @@ a {
     transform: scale(2) translateY(30px);
     transform-origin: left;
   }
-}
+} */
 @media screen and (max-width: 768px) {
   .sidebar-photo:hover {
     display: none;
