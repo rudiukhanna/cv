@@ -50,7 +50,9 @@ a {
   background-color: var(--color-background-sidebar);
   box-shadow: 2px 2px 5px 5px #c6c7c6;
   border: 1px solid var(--color-text-headings);
-  animation: sidebarUp 2s ease-out;
+  animation-name: sidebarUp;
+  animation-duration: 1s;
+  animation-fill-mode: none;
 }
 
 @keyframes sidebarUp {
@@ -80,26 +82,21 @@ a {
   background-size: cover;
   background-position: center;
 }
-/* .sidebar-photo:hover {
+
+.photo-enlarge {
   cursor: pointer;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  animation: photoEnlarge .8s ease-in both; */
-
-
-/* @keyframes photoEnlarge {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(2) translateY(30px);
-    transform-origin: left;
-  }
-} */
-@media screen and (max-width: 768px) {
-  .sidebar-photo:hover {
-    display: none;
-  }
+  transform: scale(2) translateY(30px);
+  transform-origin: left;
+  transition: all ease 1s;
 }
+
+.photo-reduce {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all ease 1s;
+}
+
 .sidebar-title {
   margin: 0;
   margin-top: 35px 0 10px;
@@ -142,9 +139,10 @@ a {
   background-color: var(--color-main-background);
   padding: 60px 55px 150px;
   font-weight: 400;
-  animation: mainUp 2.5s ease-out;
+  animation-name: mainUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: none;
 }
-
 @keyframes mainUp {
   80% {
     transform: translateY(0px);
@@ -154,6 +152,7 @@ a {
     opacity: 0;
   }
 }
+
 .title {
   margin: 0;
   margin-right: 45px;
@@ -174,7 +173,7 @@ a {
 .job:hover {
   cursor: pointer;
   opacity: 1;
-  transition: all 0.5s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 /* Summary */

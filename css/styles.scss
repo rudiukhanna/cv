@@ -30,7 +30,7 @@ $xLarge: 36px;
 $x2Large: 40px;
 
 // Animation
-$fill: ease-out;
+$fill: none;
 
 // colors
  $colorBoxShadow: #c6c7c6;
@@ -125,29 +125,24 @@ body {
         repeat: no-repeat;
         size: cover;
         position: center;
+        
     }
-    // &:hover {
-    //     cursor: $cursor;
-    //     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    //     @include photoEnlarge($fill);
-    //     }
-    }
+}
+   
 
-        // @keyframes photoEnlarge {
-        //     from {
-        //         transform: scale(1);
-        //     }
-        //         to {
-        //         transform: scale(2) translateY(30px);
-        //         transform-origin: left;
-        //         }
-        // }
+.photo-enlarge {
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transform: scale(2) translateY(30px);
+    transform-origin: left;
+    transition: all ease 1s;
+}
 
-        // @media screen and (max-width: 768px) {
-        //     .sidebar-photo:hover {
-        //         display: none;
-        //     }
-        // }
+.photo-reduce {
+    cursor: pointer;
+    transform: scale(1);
+    transition: all ease 1s;
+}
 
         .sidebar-title {
             margin: $marginClear;
@@ -192,10 +187,9 @@ body {
         }
 
         // Main
-        @mixin mainUp ($delay, $fill) {
+        @mixin mainUp ($fill) {
             animation-name: mainUp;
             animation-duration: 1.5s;
-            animation-delay: $delay;
             animation-fill-mode: $fill;
         }
 
@@ -203,8 +197,8 @@ body {
             background-color: var(--color-main-background);
             padding: $mainContentPadding;
             font-weight: $fontWeight;
-            @include mainUp($delay, $fill);
-        }
+            @include mainUp($fill);
+        
 
         @keyframes mainUp {
             80% {
@@ -215,6 +209,7 @@ body {
                 opacity: 0;
             }
         }
+    }
 
         .title {
             margin: $marginClear;
