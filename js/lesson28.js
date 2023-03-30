@@ -17,7 +17,7 @@ const sectionTitles = document.querySelectorAll('.title');
 
 for (let i = 0; i < sectionTitles.length; i++) {
   const title = sectionTitles[i];
-  const letter = title.textContent[0].toUpperCase(); 
+  const letter = title.textContent[0]; 
   title.innerHTML = `<span class="title-letter">${letter}</span>${title.innerHTML}`;
   
   document.addEventListener('keydown', function(event) {
