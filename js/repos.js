@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 projectsSection.appendChild(repoCard);
 
-                
-
             });
         })
 })
