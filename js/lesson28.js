@@ -38,6 +38,9 @@ document.addEventListener('keydown', function(event) {
     } else if (event.code === 'KeyD' || event.code === 'KeyВ') {
         const section = document.querySelector('.education');
         section.scrollIntoView({behavior: 'smooth'});
+    } else if (event.code === 'KeyE' || event.code === 'KeyУ') {
+      const section = document.querySelector('.projects');
+      section.scrollIntoView({behavior: 'smooth'});
     }
   });
 }
