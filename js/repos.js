@@ -1,13 +1,13 @@
 class GitHubAPI {
     constructor(token, login) {
-      this._token = token;
-      this._login = login;
+      this.token = token;
+      this.login = login;
     }
   
     async getRepos() {
-      const response = await fetch(`https://api.github.com/users/${this._login}/repos`, {
+      const response = await fetch(`https://api.github.com/users/${this.login}/repos`, {
         headers: {
-          Authorization: `token ${this._token}`,
+          Authorization: `token ${this.token}`,
         },
       });
       const repos = await response.json(); 
@@ -15,7 +15,7 @@ class GitHubAPI {
     }
   }
   
-  const githubAPI = new GitHubAPI('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', 'rudiukhanna');
+  const githubAPI = new GitHubAPI('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', 'rudiukhanna');
   githubAPI.getRepos().then((repos) => {
     const projectsSection = document.getElementById('projects-section');
 
