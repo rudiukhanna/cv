@@ -7,7 +7,7 @@ class GitHubAPI {
     async getRepos() {
       const response = await fetch(`https://api.github.com/users/${this.login}/repos`, {
         headers: {
-          Authorization: `token ${this.token}`,
+          Authorization: `Bearer ${this.token}`,
         },
       });
       const repos = await response.json(); 
