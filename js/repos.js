@@ -6,7 +6,7 @@ class GithubApi {
   
     getRepos() {
       const headers = new Headers();
-      headers.append('Authorization', `Token ${this.token}`);
+      headers.append('Authorization', `Bearer ${this.token}`);
   
       return fetch(`https://api.github.com/users/${this.username}/repos`, { headers })
         .then(response => response.json())
