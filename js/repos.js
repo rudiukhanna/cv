@@ -15,7 +15,7 @@ class GithubApi {
   }
   
   
-  const api = new GithubApi('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', 'rudiukhanna');
+  const api = new GithubApi( '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' ,'rudiukhanna');
   document.addEventListener('DOMContentLoaded', function () {
     api.getRepos()
       .then(data => {
