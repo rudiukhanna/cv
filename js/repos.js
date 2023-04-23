@@ -15,7 +15,7 @@ class GithubApi {
   }
   
   
-  const api = new GithubApi( 'enter my tokin please' ,'rudiukhanna');
+  const api = new GithubApi( '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' ,'rudiukhanna');
   document.addEventListener('DOMContentLoaded', function () {
     api.getRepos()
       .then(data => {
